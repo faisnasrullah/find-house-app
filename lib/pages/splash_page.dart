@@ -1,3 +1,4 @@
+import 'package:find_house_app/pages/home_page.dart';
 import 'package:find_house_app/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -63,7 +64,14 @@ class SplashPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HomePage(),
+                          ),
+                        );
+                      },
                       child: const Text(
                         'Explore Now',
                         style: TextStyle(fontSize: 18),
